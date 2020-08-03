@@ -48,10 +48,7 @@ class _HomePageState extends State<HomePage> {
                 title: new Text(''),
                 icon: new Icon(Icons.category)
               ),
-             // new BottomNavigationBarItem(
-              //  title: new Text(''),
-            //    icon: new Icon(Icons.notifications)
-            //  )
+             
 
             ],
           ),
@@ -135,12 +132,7 @@ class MainContent extends StatelessWidget {
                           context, 
                           MaterialPageRoute(
                             builder: (context) => Category()
-                            //Local(
-                             // videoPlayerController: VideoPlayerController.asset(
-                               // 'videos/VID-20180101-WA0002.mp4'
-                              //),
-                             // looping: true,
-                           // ),
+                            
                             ));
                       },
                       child: new Container(
@@ -280,12 +272,7 @@ class MainContent extends StatelessWidget {
                               child: Card(
                                 child: Image.asset('videos/pipo.jpg'),
                               ),
-                            //  decoration: new BoxDecoration(
-                            //      borderRadius: new BorderRadius.circular(5.0),
-                            //      image: new DecorationImage(
-                            //          image: new NetworkImage(
-                            //              'https://pawanjewellers.in/wp-content/uploads/2016/09/Jewellery-new.jpg'),
-                            //          fit: BoxFit.cover)),
+                           
                             ),
                           ),
                           new Text("A short film ",
@@ -321,11 +308,6 @@ class MainContent extends StatelessWidget {
                               child: Card(
                                 child: Image.asset('videos/cattoo.jpeg'),
                               ),
-                              //decoration: new BoxDecoration(
-                              //    borderRadius: new BorderRadius.circular(5.0),
-                              //    image: new DecorationImage(
-                              //        image: new Image.asset('ece.jpg'),
-                              //        fit: BoxFit.cover)),
                             ),
                           ),
                           new Text('Funny cat video',
@@ -381,12 +363,7 @@ class MainContent extends StatelessWidget {
                               child: Card(
                                 child: Image.asset('videos/harry.png'),
                               ),
-                        //      decoration: new BoxDecoration(
-                        //          borderRadius: new BorderRadius.circular(5.0),
-                        //          image: new DecorationImage(
-                        //              image: new NetworkImage(
-                        //                  'https://s1.cdn.autoevolution.com/images/gallery/LEXUS-HS-250h-3892_26.jpg'),
-                        //              fit: BoxFit.cover)),
+
                             ),
                           ),
                           new Text(
@@ -424,12 +401,6 @@ class MainContent extends StatelessWidget {
                               child: Card(
                                 child: Image.asset('videos/op.png'),
                               ),
-                           //   decoration: new BoxDecoration(
-                            //      borderRadius: new BorderRadius.circular(5.0),
-                            //      image: new DecorationImage(
-                            //          image: new NetworkImage(
-                            //              'https://d3tvpxjako9ywy.cloudfront.net/blog/content/uploads/2015/03/company-culture-why-it-matters.jpg?av=6219bb831e993c907ca622baef062556'),
-                            //          fit: BoxFit.cover)),
                             ),
                           ),
                           new Text("Hits",
@@ -465,12 +436,6 @@ class MainContent extends StatelessWidget {
                               child: Card(
                                 child: Image.asset('videos/V.png')
                               ),
-                            //  decoration: new BoxDecoration(
-                              //    borderRadius: new BorderRadius.circular(5.0),
-                                //  image: new DecorationImage(
-                                  //    image: new NetworkImage(
-                                    //      'http://images4.fanpop.com/image/photos/21600000/Electronics-hd-wallpaper-21627626-1920-1200.jpg'),
-                                      //fit: BoxFit.cover)),
                             ),
                           ),
                           new Text('Playlist V',
@@ -524,14 +489,8 @@ class MainContent extends StatelessWidget {
                             child: new Container(
                               height: 100.0,
                               child: Card(
-                                child: Image.asset('videos/pip.jpg'),
+                                child: Image.asset('videos/pipo.jpg'),
                               ),
-                          //    decoration: new BoxDecoration(
-                            //      borderRadius: new BorderRadius.circular(5.0),
-                              //    image: new DecorationImage(
-                                //      image: new NetworkImage(
-                                  //        'https://www.howtogeek.com/wp-content/uploads/2016/01/steam-and-xbox-controllers.jpg'),
-                                    //  fit: BoxFit.cover)),
                             ),
                           ),
                           new Text(
@@ -557,10 +516,11 @@ class MainContent extends StatelessWidget {
                           context, 
                           MaterialPageRoute(
                             builder: (context) => Local(
-                              videoPlayerController: VideoPlayerController.asset(
-                                'videos/VID-20180101-WA0002.mp4'
+                              videoPlayerController: VideoPlayerController.network(
+                                'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'
+                              //  'videos/VID-20180101-WA0002.mp4'
                               ),
-                              looping: true,
+                             // looping: true,
                             ),
                             ));
                       },
@@ -569,12 +529,6 @@ class MainContent extends StatelessWidget {
                               child: Card(
                                 child: Image.asset('videos/innocent.png'),
                               ),
-                     //         decoration: new BoxDecoration(
-                       //           borderRadius: new BorderRadius.circular(5.0),
-                         //         image: new DecorationImage(
-                           //           image: new NetworkImage(
-                             //             'https://pawanjewellers.in/wp-content/uploads/2016/09/Jewellery-new.jpg'),
-                               //       fit: BoxFit.cover)),
                             ),
                           ),
                           new Text("Top Cats Compilation ",
@@ -610,12 +564,6 @@ class MainContent extends StatelessWidget {
                                 child: Card(
                                   child: Image.asset('videos/3d.png')
                                 )
-                    //            decoration: new BoxDecoration(
-                      //              borderRadius: new BorderRadius.circular(5.0),
-                        //            image: new DecorationImage(
-                          //              image: new NetworkImage(
-                            //                'http://images4.fanpop.com/image/photos/21600000/Electronics-hd-wallpaper-21627626-1920-1200.jpg'),
-                              //          fit: BoxFit.cover)),
                               ),
                           ),
                           new Text('3-D art Tutorial',
@@ -634,36 +582,3 @@ class MainContent extends StatelessWidget {
     );
   }
 }
-/*class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('VideoApp'),
-          backgroundColor: Colors.deepOrange,
-        ),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: <Widget>[
-            Container(
-              width: 200,
-              height: 200,
-              child: Card(
-                color: Colors.red,
-                child: Text('hmm'),
-              ),
-            ),
-            Container(
-              child: Card(
-                child: Text('aaaa'),
-              )
-            )
-          ],
-        ),
-        backgroundColor: Colors.blue.shade200,
-      ),
-    );
-  }
-}*/
